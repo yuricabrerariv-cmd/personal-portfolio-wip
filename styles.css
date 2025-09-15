@@ -331,7 +331,11 @@ main {
     @media (max-width: 475px) {
         display: inline-block;
         margin-bottom: 48px;
-  
+    }
+}
+main > div > a > h4 {
+    @media (max-width: 475px) {
+        text-align: center;
     }
 }
 

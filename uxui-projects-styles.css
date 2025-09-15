@@ -73,6 +73,9 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
+
+
+
 /* --- HERE COMES MY STYLES --- */
 
 body {
@@ -80,6 +83,9 @@ body {
     background-color: #11100F;
     color: #ffffff;
     font-family: Inter;
+    @media (max-width: 475px) {
+        margin-top: -7.9rem;
+    }
 }
 
 h3 {
@@ -106,7 +112,7 @@ header {
     height: 100%;
     transform-style: preserve-3d;
     @media (max-width: 900px) {
-        height: 80%;
+        height: 25%;
     }
 }
 
@@ -166,9 +172,6 @@ a:hover {
 a {
     text-decoration: none;
 }
-.home {
-    /* color: #212121; */
-}
 
 /* HERE ARE THE SECTION STYLES */
 section {
@@ -179,8 +182,8 @@ main {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(48, 1fr);
     @media (max-width: 475px) {
-        display: inline-block;
-        margin-top: 128px;  
+        margin-top: 128px;
+        grid-template-rows: repeat(15, 1fr);  
     }
 }
 
@@ -197,8 +200,12 @@ h5 {
     grid-row-start: 3;
     grid-row-end: 6;
     @media (max-width: 475px) {
-        display: inline-block;
+        grid-column-start: 2;
+        grid-column-end: 10;
+        grid-row-start: 2;
+        grid-row-end: 4;
         margin-left: 32px;
+        margin-top: -2rem;
     }  
 }
 h5.title {
@@ -224,10 +231,13 @@ h3 {
     grid-row-end: 9;
     display: flex;
     gap: 56px;
-    /* background-color: chocolate; */
     border-top: 1px solid;
     border-color: #ffffff25;
     @media (max-width: 475px) {
+        grid-column-start: 3;
+        grid-column-end: 12;
+        grid-row-start: 3;
+        grid-row-end: 6;
         flex-direction: column;
     }
 }
@@ -255,6 +265,10 @@ h3 {
     border-top: 1px solid;
     border-color: #ffffff25;
     @media (max-width: 475px) {
+        grid-column-start: 3;
+        grid-column-end: 12;
+        grid-row-start: 6;
+        grid-row-end: 9;
         flex-direction: column;
     }
 }
@@ -279,10 +293,13 @@ h3 {
     grid-row-end: 15;
     display: flex;
     gap: 56px;
-    /* background-color: chocolate; */
     border-top: 1px solid;
     border-color: #ffffff25;
     @media (max-width: 475px) {
+        grid-column-start: 3;
+        grid-column-end: 12;
+        grid-row-start: 9;
+        grid-row-end: 12;
         flex-direction: column;
     }
 }
@@ -307,11 +324,14 @@ h3 {
     grid-row-end: 18;
     display: flex;
     gap: 56px;
-    /* background-color: chocolate; */
     border-top: 1px solid;
     border-bottom: 1px solid;
     border-color: #ffffff25;
     @media (max-width: 475px) {
+        grid-column-start: 3;
+        grid-column-end: 12;
+        grid-row-start: 12;
+        grid-row-end: 15;
         flex-direction: column;
     }
 }
@@ -443,7 +463,7 @@ footer {
 }
 
 
-/* SOCIAL MEDIA */
+/* ------- SOCIAL MEDIA ------- */
 .socialmedia-icons {
     position: fixed;
     top: 75%;
