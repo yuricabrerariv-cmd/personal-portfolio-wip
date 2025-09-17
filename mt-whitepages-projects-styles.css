@@ -353,7 +353,7 @@ p {
     gap: 24px;
     @media (max-width: 800px) {
         flex-direction: column;
-        margin: 64px 114px;
+        margin: 64px 80px;
     }
 }
 button {
